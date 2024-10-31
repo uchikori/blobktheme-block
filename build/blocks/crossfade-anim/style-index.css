@@ -1,0 +1,57 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/crossfade-anim/style.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.block-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ccc;
+}
+
+.block-container img {
+  width: 100%;
+  max-width: 160px;
+  margin: 10px;
+  aspect-ratio: 1/1;
+}
+
+.bl_crossFadeAnim {
+  max-width: 100% !important;
+}
+
+.bl_crossFadeAnim_inner,
+.wp-block-create-block-crossfade-anim_inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.bl_crossFadeAnim_inner img,
+.wp-block-create-block-crossfade-anim_inner img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+  opacity: 0;
+  transform: scale(1.1);
+  transition: all 3.5s cubic-bezier(0.455, 0.833, 0.515, 0.955), transform 3.5s cubic-bezier(0.455, 0.833, 0.515, 0.955);
+}
+.bl_crossFadeAnim_inner img.is-visible,
+.wp-block-create-block-crossfade-anim_inner img.is-visible {
+  z-index: 1;
+  opacity: 1;
+  transform: scale(1.02);
+  height: 100%;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

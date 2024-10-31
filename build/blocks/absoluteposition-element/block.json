@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/absolute-position-element",
+  "version": "0.1.0",
+  "title": "AbsolutePositionElement Block",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "絶対配置用のブロックです",
+  "example": {},
+  "supports": {
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "textdomain": "absolute-position-element",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

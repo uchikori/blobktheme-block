@@ -1,0 +1,32 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.bl_positionAbsolute {
+	max-width: 100%;
+	position: absolute;
+	display: inline-block;
+	& * {
+		display: inline-block;
+	}
+}
+
+.is-layout-constrained {
+	.wp-block-create-block-image-absolute {
+		&.bl_positionAbsolute {
+			margin: 0 !important;
+		}
+	}
+}
+
+@media screen and (max-width: 781px) {
+	.is-style-absolute-position .bl_positionAbsolute {
+		position: static;
+		display: block;
+		& * {
+			display: block;
+		}
+	}
+}

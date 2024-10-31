@@ -1,0 +1,32 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/core-image-absolute/style.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.is-style-absolute-position .bl_positionAbsolute {
+  max-width: 100%;
+  position: absolute;
+}
+
+.bl_positionAbsolute img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.is-layout-constrained .wp-block-create-block-image-absolute.bl_positionAbsolute {
+  margin: 0 !important;
+}
+
+@media screen and (max-width: 781px) {
+  .is-style-absolute-position .bl_positionAbsolute {
+    position: static;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

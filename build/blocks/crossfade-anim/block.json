@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/crossfade-anim",
+  "version": "0.1.0",
+  "title": "CrossfadeAnimation Block",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "クロスフェードアニメーション用のブロックです",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "crossfade-anim",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

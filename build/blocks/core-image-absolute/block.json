@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/image-absolute",
+  "version": "0.1.0",
+  "title": "CrossfadeAnimation Block",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "絶対配置する画像ブロックです",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "image-absolute",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
