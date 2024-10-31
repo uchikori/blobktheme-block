@@ -56,3 +56,14 @@ function add_my_editor_script() {
 	);
 }
 add_action('enqueue_block_editor_assets', 'add_my_editor_script');
+
+function custom_block_styles(){
+  register_block_style(
+    'create-block/link-box',
+    array(
+      'name' => 'pettern2',
+      'label' => 'パターン2',
+    ),
+  );
+}
+add_action( 'init', 'custom_block_styles' );
