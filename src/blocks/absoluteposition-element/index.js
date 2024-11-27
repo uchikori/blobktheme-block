@@ -32,7 +32,76 @@ registerBlockType(metadata.name, {
 	icon: "move",
 	category: "design",
 	supports: {
+		__experimentalOnEnter: true,
+		__experimentalOnMerge: true,
+		__experimentalSettings: true,
+		align: ["wide", "full"],
+		anchor: true,
+		ariaLabel: true,
 		html: false,
+		background: {
+			backgroundImage: true,
+			backgroundSize: true,
+			__experimentalDefaultControls: {
+				backgroundImage: true,
+			},
+		},
+		color: {
+			gradients: true,
+			heading: true,
+			button: true,
+			link: true,
+			__experimentalDefaultControls: {
+				background: true,
+				text: true,
+			},
+		},
+		spacing: {
+			margin: ["top", "bottom"],
+			padding: true,
+			blockGap: true,
+			__experimentalDefaultControls: {
+				padding: true,
+				blockGap: true,
+			},
+		},
+		dimensions: {
+			minHeight: true,
+		},
+		__experimentalBorder: {
+			color: true,
+			radius: true,
+			style: true,
+			width: true,
+			__experimentalDefaultControls: {
+				color: true,
+				radius: true,
+				style: true,
+				width: true,
+			},
+		},
+		position: {
+			sticky: true,
+		},
+		typography: {
+			fontSize: true,
+			lineHeight: true,
+			__experimentalFontFamily: true,
+			__experimentalFontWeight: true,
+			__experimentalFontStyle: true,
+			__experimentalTextTransform: true,
+			__experimentalTextDecoration: true,
+			__experimentalLetterSpacing: true,
+			__experimentalDefaultControls: {
+				fontSize: true,
+			},
+		},
+		layout: {
+			allowSizingOnChildren: true,
+		},
+		interactivity: {
+			clientNavigation: true,
+		},
 	},
 	attributes: {
 		borderRadius: {

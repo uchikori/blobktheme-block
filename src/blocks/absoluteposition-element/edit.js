@@ -52,6 +52,7 @@ export default function Edit(props) {
 		"core/image",
 		"core/list",
 		"core/group",
+		"core/cover",
 	];
 
 	const blockProps = useBlockProps({

@@ -60,7 +60,7 @@ function Edit(props) {
     attributes,
     setAttributes
   } = props;
-  const ALLOWED_BLOCKS = ["core/heading", "core/paragraph", "core/image", "core/list", "core/group"];
+  const ALLOWED_BLOCKS = ["core/heading", "core/paragraph", "core/image", "core/list", "core/group", "core/cover"];
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)({
     className: "bl_positionAbsolute",
     style: {
@@ -222,7 +222,76 @@ __webpack_require__.r(__webpack_exports__);
   icon: "move",
   category: "design",
   supports: {
-    html: false
+    __experimentalOnEnter: true,
+    __experimentalOnMerge: true,
+    __experimentalSettings: true,
+    align: ["wide", "full"],
+    anchor: true,
+    ariaLabel: true,
+    html: false,
+    background: {
+      backgroundImage: true,
+      backgroundSize: true,
+      __experimentalDefaultControls: {
+        backgroundImage: true
+      }
+    },
+    color: {
+      gradients: true,
+      heading: true,
+      button: true,
+      link: true,
+      __experimentalDefaultControls: {
+        background: true,
+        text: true
+      }
+    },
+    spacing: {
+      margin: ["top", "bottom"],
+      padding: true,
+      blockGap: true,
+      __experimentalDefaultControls: {
+        padding: true,
+        blockGap: true
+      }
+    },
+    dimensions: {
+      minHeight: true
+    },
+    __experimentalBorder: {
+      color: true,
+      radius: true,
+      style: true,
+      width: true,
+      __experimentalDefaultControls: {
+        color: true,
+        radius: true,
+        style: true,
+        width: true
+      }
+    },
+    position: {
+      sticky: true
+    },
+    typography: {
+      fontSize: true,
+      lineHeight: true,
+      __experimentalFontFamily: true,
+      __experimentalFontWeight: true,
+      __experimentalFontStyle: true,
+      __experimentalTextTransform: true,
+      __experimentalTextDecoration: true,
+      __experimentalLetterSpacing: true,
+      __experimentalDefaultControls: {
+        fontSize: true
+      }
+    },
+    layout: {
+      allowSizingOnChildren: true
+    },
+    interactivity: {
+      clientNavigation: true
+    }
   },
   attributes: {
     borderRadius: {
